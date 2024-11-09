@@ -2,7 +2,7 @@ import React from 'react';
 
 // import { Breadcrumbs } from '../breadcrumbs';
 // import SearchInput from '../search-input';
-// import { UserNav } from './user-nav';
+import { UserNav } from './user-nav';
 import { Separator } from '../ui/separator';
 import { SidebarTrigger } from '../ui/sidebar';
 import { ThemeToggle } from '@/components/theme-toggle';
@@ -18,7 +18,7 @@ export const Header = () => {
 
       <div className="flex items-center gap-2 px-4">
         <div className="hidden md:flex">{/* <SearchInput /> */}</div>
-        {/* <UserNav /> */}
+        <UserNav />
         <ThemeToggle />
       </div>
     </header>
