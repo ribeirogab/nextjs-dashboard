@@ -30,32 +30,32 @@ export const navItems: NavItem[] = [
     isActive: false,
     items: [], // No child items
   },
-  {
-    title: 'Product',
-    url: '/product',
-    icon: 'product',
-    shortcut: ['p', 'p'],
-    isActive: false,
-    items: [], // No child items
-  },
-  {
-    title: 'Account',
-    url: '#', // Placeholder as there is no direct link for the parent
-    icon: 'billing',
-    isActive: true,
-    items: [
-      {
-        title: 'Profile',
-        url: '/profile',
-        icon: 'userPen',
-        shortcut: ['p', 'p'],
-      },
-      {
-        title: 'Login',
-        shortcut: ['l', 'l'],
-        url: '/auth/login',
-        icon: 'login',
-      },
-    ],
-  },
+  // {
+  //   title: 'Product',
+  //   url: '/product',
+  //   icon: 'product',
+  //   shortcut: ['p', 'p'],
+  //   isActive: false,
+  //   items: [], // No child items
+  // },
+  // {
+  //   title: 'Account',
+  //   url: '#', // Placeholder as there is no direct link for the parent
+  //   icon: 'billing',
+  //   isActive: true,
+  //   items: [
+  //     {
+  //       title: 'Profile',
+  //       url: '/profile',
+  //       icon: 'userPen',
+  //       shortcut: ['p', 'p'],
+  //     },
+  //     {
+  //       title: 'Login',
+  //       shortcut: ['l', 'l'],
+  //       url: '/auth/login',
+  //       icon: 'login',
+  //     },
+  //   ],
+  // },
 ];

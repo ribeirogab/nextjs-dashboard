@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { UserNav } from './user-nav';
 import { Breadcrumbs } from '../breadcrumbs';
 import { Separator } from '../ui/separator';
