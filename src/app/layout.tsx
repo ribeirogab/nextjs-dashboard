@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
+import { NuqsAdapter } from 'nuqs/adapters/next/app';
 
 import './globals.css';
 import { ThemeProvider } from '@/components/theme-provider';
@@ -30,14 +31,16 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <ThemeProvider
-          disableTransitionOnChange
-          defaultTheme="dark"
-          attribute="class"
-          enableSystem
-        >
-          {children}
-        </ThemeProvider>
+        <NuqsAdapter>
+          <ThemeProvider
+            disableTransitionOnChange
+            defaultTheme="dark"
+            attribute="class"
+            enableSystem
+          >
+            {children}
+          </ThemeProvider>
+        </NuqsAdapter>
       </body>
     </html>
   );
